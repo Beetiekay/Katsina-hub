@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.signup-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0px 200px;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 80vh;
+    box-shadow: 0px 0px 10px rgb(0 0 0 /50%);
+}
+.form-inner p{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(11, 11, 83);
+    margin-bottom: 6px;
+}
+.form-inner span{
+    font-style: oblique;
+    font-weight: 800;
+    color: #000;
+    border-bottom: 3px solid rgba(9, 13, 54, 0.726);
+}
+.form-inner h2{
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(11, 11, 83);
+    margin-bottom: 30px;
+}
+.form-inner .input-box{
+    background: #fffafa;
+    /* box-shadow: 0px 0px 10px rgb(0 0 0 /50%); */
+    margin-bottom: 20px;
+    height: 6.5vh;
+    width: 130%;
+    border: 3px solid rgb(11, 11, 83);
+    border-radius: 3rem;
+    margin-top: 3rem;
+}
+.form-inner .input-box input{
+    background: none;
+    border: none;
+    width: 100%;
+    height: 6vh;
+}
+.password-toggle{
+    position: absolute;
+    width: 50%;
+    height: 50px;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    display: none;
+    outline: none;
+    cursor: pointer;
+}
+.toggle-eye{
+    position: absolute;
+    top: 22.8rem;
+    right: 57rem;
+    font-size: 20px;
+}
+.toggle-eye .close{
+    transition: 0.4s all ease-in-out;
+}
+.toggle-eye .open{
+    transition: 0.2s all ease-out;
+}
+.input-box ::placeholder{
+    font-size: 15px;
+}
+:checked ~ .toggle-eye .close{
+    opacity: 0;
+}
+.input-box label{
+    position: relative;
+    top: -12px;
+    left: 20px;
+    color: rgb(11, 11, 83);
+    background: #fffafa;
+    height: 20px;
+    padding: 0 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.mail-icon{
+    position: relative;
+    top: 7px;
+    right: 40px;
+    font-size: 20px;
+    color: rgb(11, 11, 83);
+}
+.mail-icon:hover{
+    transform: scale(1.1);
+}
+.input-box{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 50%;
+    height: 6.5vh;
+    color: #fffafa;
+    background: rgb(11, 11, 83);
+    border-radius: 3rem;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.submitBtn a{
+    color: #fffafa;
+}
+.submitBtn{
+    margin-top: 6px;
+    margin-bottom: 2rem;
+}
+.submitBtn:hover{
+    transform: translateX(-4px);
+    transition: all 0.2s ease-in-out;
+}
+.create a{
+    position: relative;
+    top: -10px;
+    font-weight: 600;
+    color: rgb(11, 11, 83);
+}
+.last-text{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(11, 11, 83);
+}
+.form-text{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 0 50px;
+    width: 50%;
+    height: 80vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.808),rgba(4, 9, 63, 0.726)), url(./asset/v1.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 10px rgb(0 0 0 /50%);
+}
+.circle{
+   position: relative;
+   top: -5.5rem;
+   left: 135px;
+   width: 80%;
+   height: 10vh;
+   border-radius: 8rem;
+   background: linear-gradient(40deg, #928aaf, #21148f);
+   box-shadow: 0px 0px 10px rgba(8, 7, 7, 0.904);
+}
+.form-text .text-center p{
+    color: #fffafa;
+    font-style: oblique;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+.form-text .text-center h2{
+    position: relative;
+    top: -40px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: #fffafa;
+}
+.form-text .text-center span{
+    color: rgb(133, 133, 214);
+    font-style: oblique;
+    border-bottom: 5px solid rgba(231, 232, 240, 0.726);
+}
+.move{
+    margin-left: 25px;
+}
